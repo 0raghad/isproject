@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="edit.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
     <title>Riyadh Season</title>
 </head>
@@ -37,45 +38,48 @@
 <div class="zones">
     <div class="zone-area">
         <div class="description">
-            <a href="#">   
-                <img  src="imghere/bou.png" alt="" >
-             </a>
-            <p class="contant">
+            
+                <img  src="imghere/bou.png" class="img" >
+            
+            <p class="contant"><b>
                 Enter The Boulevard and be transported to another world;
-                to place of timeless charm, where beauty, joy, and good food are a way of life.
+                to place of timeless charm, where beauty, joy, and good food are a way of life.</b>
             </p>
            
         </div>
     </div>
     <div class="zone-area">
         <div class="description">
-            <h2 class="heading"> <a href="#">   
-                <img  src="imghere/front.png" alt="" >
-             </a></h2>
-            <p class="contant">
+            
+                <img  src="imghere/front.png" class="img" >
+           </h2>
+            <p class="contant"><b>
                  extraordinary urban experience that re-imagines how we work,
-                 play, dine, shop and share space in the heart of Riyadh.
+                 play, dine, shop and share space in the heart of Riyadh.</b>
             </p>
            
         </div>
     </div>
     <div class="zone-area">
         <div class="description">
-            <h2 class="heading">Riyadh Winter Wonderland </h2>
-            <p class="contant">
+            
+            <img  src="imghere/winter.png" class="img" >
+            
+            <p class="contant"><b>
                 A fun and amusing festival for all family members that offers a wide selection of games, competitions,
-                 arts, and performances in an enjoyable atmosphere,that leave a striking memory of this unique event.
+                 arts, and performances in an enjoyable atmosphere,that leave a striking memory.</b>
             </p>
           
         </div>
     </div>
     <div class="zone-area">
         <div class="description">
-            <h2 class="heading">Al Murabaa</h2>
+            <img  src="imghere/murabaa.png" class="img" >
             <p class="contant">
+                <b>
                 for the foodies. Some of the world’s finest restaurants will be in this zone.
                  Whether its New York’s Carbone or Peru’s Maido, 
-                you’re sure to be dining at the best of the best.
+                you’re sure to be dining at the best of the best.</b>
             </p>
           
         </div>
@@ -100,7 +104,7 @@
     <div class="table-cell first-cell">
         <p>The Luna cinama</p>
     </div>
-    <div class="table-cell">
+    <div class="table-cell2">
         <p>open-air cinema events a classic film on a big screen in a beautiful or prestigious setting. We use state of the art screens, digital projectors and bespoke sound equipment to provide a cinema-quality visual and audio experience, but with the magic of being under the stars.</p>
     </div>
     <div class="table-cell last-cell">
@@ -113,7 +117,7 @@
     <div class="table-cell first-cell">
         <p>The wizard of OZ</p>
     </div>
-    <div class="table-cell">
+    <div class="table-cell2">
         <p>Explore a world of imagination in The Wizard of Oz Musical, 
             that will take you on a journey to a land of fantasy with classic 
             stories and iconic music, in the biggest theatrical production of its kind in Riyadh
@@ -129,7 +133,7 @@
     <div class="table-cell first-cell">
         <p>The Illusionists</p>
     </div>
-    <div class="table-cell">
+    <div class="table-cell2">
         <p>The Illusionists are a touring magic production which
              features a rotating cast of 5 to 8 magicians who all 
              specialise in specific branches of magic from stage 
@@ -172,51 +176,50 @@
 <li>VI.Majed Almohandes</li>
 </ul>
 </div>
-<section class="drag">
-<h1 class="rate">Rate Us!</h1>
-<h4 class="f-zone" >what is your favorite zone?</h4>
+<!-- End list-->
+
+ 
+<h4 class="rate"><b>Rate Us!</b></h4>
 <!--vid-->
+
 <div class="vid">
 <embed class="vids" src="https://www.youtube.com/embed/W7UOvJlMY34"></embed>
 </div>
 
 <!--drag-->
-<div class="wrapper">
-
+<section class="drag"></section>
+<p class="f-zone"><b>what is your favorite zone?</b></p>
+<div class="wrapper" >
 <div class="item">
 <span class="text">Riyadh Boulevard</span>
-<i class="fas fa-bars"></i>
+
 </div>
 <div class="item">
 <span class="text">Riyadh Front</span>
-<i class="fas fa-bars"></i>
+
 </div>
 <div class="item">
 <span class="text">Riyadh Winter Wonderland</span>
-<i class="fas fa-bars"></i>
+
 </div>
 <div class="item">
 <span class="text">Al Murabba </span>
-<i class="fas fa-bars"></i>
+
 </div>
 </div>
 
-<script>
-const dragArea = document.querySelector(".wrapper");
-new Sortable(dragArea, {
-animation: 350
-});
-</script>
+
 </section>
+<!-- End drag-->
 
 <!--contact us-->
 
 <div class="contactform">
    <form>
-       <h2>Enter Your Info </h2>
+       <h2 align="left" >Enter Your Info </h2>
        <div class="inputbox">
            <input type="text" name="" required="required">
-           <span>First Name</span>
+           <span >First Name</span>
        </div>
        <div class="inputbox">
         <input type="text" name="" required="required">
@@ -227,7 +230,7 @@ animation: 350
         <span>Email</span>
     </div>
     <div>
-    <h2 >Choose the event you want to book</h2>
+    <h2 >Choose the event you to read more about</h2>
     <select id="event" name="event"  >
         <option value="default">Event</option>
         <option value="Boulevard">Riyadh Boulevard</option>
@@ -246,20 +249,20 @@ animation: 350
 </div>
 </div>
 </section>
-
-<footer>
-    <div class="footer-conten">
-        <h2>contact us</h2>
+<footer class="footer">
+    <div class="footer-content">
+        <h2 >contact us</h2>
         <div class="box">
 
-            <div class="txt">
-                <h3> <a href="mailto:Html.group2@gmail.com"> Email</a></h3>
+            <div class="Email">
+                <h3> <a href="mailto:Html.group2@gmail.com"><b>Email</b></a></h3>
             </div>
             <div>
-                <button class="time" type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>  
+                <button id="time" type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>  
                 <p id="demo"></p> <hr>
                 </div>
         </div>
+       
     </div>
 </footer>
 
